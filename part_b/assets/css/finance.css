@@ -1,0 +1,104 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Body styles */
+body {
+    background-image: url('../images/Finance.jpg');
+    background-size: 100% 100%;
+    font-size: 18px;
+    line-height: 20px;
+    background-repeat: no-repeat;
+}
+
+header,
+footer {
+    background-color:white;
+    color:darkblue;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Francois One', sans-serif;
+}
+
+.wrapper {
+    z-index: 1;
+
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    font-family: 'Chelsea Market', cursive;;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    position: relative;
+    color: darkblue;
+}
+
+.wrapper h2 {
+    text-align: center;
+    color:  rgba(50, 50, 50, 10);
+    font-family: sans-serif;
+   
+}
+form {
+    width: 50%;
+    margin: 50px auto;
+    background-color: rgba(50, 50, 50, 0.8);
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+form div {
+    margin-bottom: 7px;
+    
+}
+
+form div label {
+    display: block;
+}
+
+form div input {
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.911);
+    border: 1px solid rgba(70, 43, 43, 0.8);
+    padding: 5px;
+    color: darkblue; 
+    font-weight: bolder;
+    border-radius: 8px;
+}
+div span {
+    margin-left: 10px;
+}
+.second input{
+    width: 122px;
+}
+.fourth{
+    width: 10px;
+    margin-left: 10px;
+}
+
+form div.reg-buttons {
+    margin-top: 20px;
+}
+form div.reg-buttons input {
+    width: 125px;
+    margin: 0;
+    transition: background-color 300ms ease-in-out;
+    color: white;
+}
+
+form div.reg-buttons input:hover {
+    background-color: rgba(68, 63, 63, 0.8);
+}

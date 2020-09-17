@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Western Cascade Finance - application Form</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/finance.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header>
+            <img src="assets/images/Logo.jpg" alt="Company Logo">
+            <h1>Western Cascade Finance</h1>
+        </header>
+
+        <h2>Application Form</h2>
+
+        <form action="applications@wcf.ab.ca" method="POST">
+
+            <div>
+                <label for="regDate">Current Date</label>
+                <input type="date" name="regDate">
+            </div>
+
+            <div class="second">
+                <label for="regName">First and Last name</label>
+                <input type="text" name="regName" pattern="[a-zA-Z]{2,64}" title="Please enter Letter" placeholder="ex) John">
+                <input type="text" name="regName" pattern="[a-zA-Z]{2,64}" title="Please enter Letter" placeholder="ex) Doe">
+            </div>
+
+            <div>
+                <label for="regAddress">Street Address</label>
+                <input type="text" name="regAddress" placeholder="Address">
+
+                <label for="regPC">Postal Code</label>
+                <input type="text" name="regPC" maxlength="7" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" title="Please enter ex) A1B 2C3" placeholder="ex) A1B 2C3">
+            </div>
+
+            <div>
+                <label for="regPhone">Phone Number</label>
+                <input type="text" name="regPhone" pattern="\d{3}-\d{3}-\d{4}" title="ex) 403-123-1234"
+                    placeholder="123-456-7890">
+                <span>Business</span> <input class="fourth" type="radio" name="regPhone" value="Business">
+                <span>Personal</span> <input class="fourth" type="radio" name="regPhone" value="Personal">
+
+            </div>
+
+            <div>
+                <label for="regEmail">Email Address</label>
+                <input type="email" name="regEmail" pattern="[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.]+[a-zA-Z]+[.]*[a-zA-Z]*"
+                    placeholder="example@gmail.com">
+            </div>
+
+            <div>
+                <label for="regClient">Are You current client ?</label>
+                <span>Yes</span> <input class="fourth" type="radio" name="regClient" value="Yes">
+                <span>No</span> <input class="fourth" type="radio" name="regClient" value="No">
+            </div>
+
+            <div>
+                <label for="regGender">Gender</label>
+                <span>Male</span> <input class="fourth" type="radio" name="regGender" value="Male">
+                <span>Female</span> <input class="fourth" type="radio" name="regGender" value="Female">
+            </div>
+
+            <div>
+                <label for="regAge">Age</label>
+                <input type="number" name="regAge" min="18" max="999">
+            </div>
+
+            <div>
+                <label for="regHomeType">Own or Rent Home ?</label>
+                <span>Own</span> <input class="fourth" type="radio" name="regHomeType" value="Own">
+                <span>Rent</span> <input class="fourth" type="radio" name="regHomeType" value="Rent">
+            </div>
+
+            <div>
+                <label for="regIncome">Annual Gross Income</label>
+                <input type="number" name="regIncome" min="0">
+            </div>
+
+
+            <div>
+                <label for="clientOwn">Please Check Boxes if you own any of the following</label>
+                <input class="fourth" type="checkbox" name="clientOwn" value="Vehicle">
+                <span>Vehicle</span>
+                <input class="fourth" type="checkbox" name="clientOwn" value="RRSP">
+                <span>RRSP</span>
+                <input class="fourth" type="checkbox" name="clientOwn" value="TFSA">
+                <span>TFSA</span>
+                <input class="fourth" type="checkbox" name="clientOwn" value="RRIF">
+                <span>RRIF</span>
+            </div>
+
+            <div class="reg-buttons">
+                <input type="submit" name="regSubmit" value="Submit Form"><input type="reset" name="regReset"
+                    value="Reset Form">
+            </div>
+    </div>
+    <footer>
+        <h4>Copyright © Western Cascade Finance</h4>
+    </footer>
+</body>
+
+</html>

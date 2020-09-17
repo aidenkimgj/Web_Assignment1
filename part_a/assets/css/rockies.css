@@ -1,0 +1,90 @@
+/* Border box styles*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Body styles */
+body {
+    background-image: url('../images/COLOURBOX7983837.jpg');
+    background-size: 100% 100%;
+    font-size: 18px;
+    line-height: 20px;
+    background-repeat: no-repeat;
+}
+
+header,
+footer {
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Francois One', sans-serif;
+}
+
+header h1 {
+    font-weight: bolder;
+    
+}
+
+div.wrapper {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: block;
+    width: 80%;
+    margin: 40px auto;
+    padding: 40px;
+    border: 2px solid #333333;
+    font-family: 'Alegreya', serif;
+    position: relative;
+    column-count: 3;
+    column-gap: 20px;
+    column-rule: 2px solid #333333;
+}
+
+.wrapper h3 {
+    text-align: center;
+}
+
+p:first-letter {
+    color: darkgreen;
+    font-size: 40px;
+    float: left;
+    line-height: 40px;
+}
+
+figure {
+    max-width: 200px;
+    margin: 0 0 20px 0;
+    float: left;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+}
+
+figure.wrap-left {
+    float: left;
+    margin-right: 20px;
+}
+
+figure.wrap-right {
+    float: right;
+    margin-left: 20px;
+}
+
+figure img {
+    width: 100%;
+    border: 2px solid #333333;
+    transition: transform 2s ease-in-out;
+}
+
+figure img:hover {
+    transform: scale(1.25);
+}
+
+footer {
+    font-weight: lighter;
+}
